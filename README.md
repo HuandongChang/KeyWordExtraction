@@ -7,9 +7,13 @@ Automatic keyword extraction is an important research topic. Keywords serve as a
 - We first read and extract all the Unigrams(a term that has only one word), Bigrams(a term that has two words), and Trigrams(a term that has three words) from a file.
 - Then we remove all the Unigrams and Bigrams that contain any of the stopwords, and also remove all the Trigrams whose first or third word is a stopwords.(Stopwords are those words that are unlikely to become keyword but are commonly appeared, like "it" and "or").
 - Apply POS Tag Pattern(Identify the part of speech), and the terms that fit into the following patterns are more likely to become keywords:
+
 NOUN NOUN
+
 ADJECTIVE NOUN
+
 NOUN
+
 - Find Term Frequency, Inverse Document Frequency, and Relative position of the first-occurrence for each of the candidates for keyword (Explained more in calculation).
 
 
@@ -21,8 +25,10 @@ For each candidates for keywords:
 
 - If t follows the POS-tag patterns: score(t) *= 1.66 
 
-Term Frequency: how many times a word/phrase appear in the document;
+Term Frequency: how many times a word/phrase appear in the document
+
 Inverse Document Frequency: in how many documents does the word/phrase appear
+
 Relative position of the first-occurrence: index of the first character of the term/total characters
 
 ## Ranking and Precision:
@@ -56,3 +62,4 @@ We found that our calculation is more accurate when regarding the bi-gram. Our h
 
 ## Reference
 Grinnell CSC-207 Project from Famida Hamid 2020 Spring.
+
