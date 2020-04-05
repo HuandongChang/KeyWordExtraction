@@ -38,12 +38,15 @@ Relative position of the first-occurrence: index of the first character of the t
 When we ran the code for uni-, bi-, and tri-gram seperately, we get the following precision score:
 
 uni-gram: 0.011199999999999995 (1.12%)
+
  bi-gram: 0.13220000000000065  (13.22%)
+ 
 tri-gram: 0.06860000000000034  (6.86%)
 
 We found that our calculation is more accurate when regarding the bi-gram. Our hypothesis is that "human selected words" contain more bi-grams than the other two. 
 
 ## Note:
+
 - You can download POSTagger package from https://nlp.stanford.edu/software/tagger.shtml#Download
 
 - You will find the list of tags and their in this link: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
